@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>sea battle</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="wrapper">
+			<div id="player1" style="display: none;">
+				<div class="player1">
+					<h3>расстановка флота первого игрока</h3>
+					<label for="x4"><span></span><span></span><span></span><span></span></label>
+					<input type="text" name="x4" id="x4">
+					<label for="x3-1"><span></span><span></span><span></span></label>
+					<input type="text" name="x3-1" id="x3-1">
+					<label for="x3-2"><span></span><span></span><span></span></label>
+					<input type="text" name="x3-2" id="x3-2">
+					<label for="x2-1"><span></span><span></span></label>
+					<input type="text" name="x2-1" id="x2-1">
+					<label for="x2-2"><span></span><span></span></label>
+					<input type="text" name="x2-2" id="x2-2">
+					<label for="x2-3"><span></span><span></span></label>
+					<input type="text" name="x2-3" id="x2-3">
+					<label for="x1-1"><span></span></label>
+					<input type="text" name="x1-1" id="x1-1">
+					<label for="x1-2"><span></span></label>
+					<input type="text" name="x1-2" id="x1-2">
+					<label for="x1-3"><span></span></label>
+					<input type="text" name="x1-3" id="x1-3">
+					<label for="x1-4"><span></span></label>
+					<input type="text" name="x1-4" id="x1-4">
+				</div>
+				<button id="next1">Следующий</button>
+				<button class="reset1">Oчистить</button>
+				<div class="pole1">
+					<h1>Ходит первый игрок</h1>
+					<div class="field-my">
+						<h3>ваше поле</h3>
+						<div class="digits">
+							<div style="display:inline-block;">1</div>
+							<div style="display:inline-block;">2</div>
+							<div style="display:inline-block;">3</div>
+							<div style="display:inline-block;">4</div>
+							<div style="display:inline-block;">5</div>
+							<div style="display:inline-block;">6</div>
+							<div style="display:inline-block;">7</div>
+							<div style="display:inline-block;">8</div>
+							<div style="display:inline-block;">9</div>
+							<div style="display:inline-block;">10</div>
+						</div>
+						<span data-coordinates="a1"></span>
+						<span data-coordinates="a2"></span>
+						<span data-coordinates="a3"></span>
+						<span data-coordinates="a4"></span>
+						<span data-coordinates="a5"></span>
+						<span data-coordinates="a6"></span>
+						<span data-coordinates="a7"></span>
+						<span data-coordinates="a8"></span>
+						<span data-coordinates="a9"></span>
+						<span data-coordinates="a10"></span>
+						<span data-coordinates="b1"></span>
+						<span data-coordinates="b2"></span>
+						<span data-coordinates="b3"></span>
+						<span data-coordinates="b4"></span>
+						<span data-coordinates="b5"></span>
+						<span data-coordinates="b6"></span>
+						<span data-coordinates="b7"></span>
+						<span data-coordinates="b8"></span>
+						<span data-coordinates="b9"></span>
+						<span data-coordinates="b10"></span>
+						<span data-coordinates="c1"></span>
+						<span data-coordinates="c2"></span>
+						<span data-coordinates="c3"></span>
+						<span data-coordinates="c4"></span>
+						<span data-coordinates="c5"></span>
+						<span data-coordinates="c6"></span>
+						<span data-coordinates="c7"></span>
+						<span data-coordinates="c8"></span>
+						<span data-coordinates="c9"></span>
+						<span data-coordinates="c10"></span>
+						<span data-coordinates="d1"></span>
+						<span data-coordinates="d2"></span>
+						<span data-coordinates="d3"></span>
+						<span data-coordinates="d4"></span>
+						<span data-coordinates="d5"></span>
+						<span data-coordinates="d6"></span>
+						<span data-coordinates="d7"></span>
+						<span data-coordinates="d8"></span>
+						<span data-coordinates="d9"></span>
+						<span data-coordinates="d10"></span>
+						<span data-coordinates="e1"></span>
+						<span data-coordinates="e2"></span>
+						<span data-coordinates="e3"></span>
+						<span data-coordinates="e4"></span>
+						<span data-coordinates="e5"></span>
+						<span data-coordinates="e6"></span>
+						<span data-coordinates="e7"></span>
+						<span data-coordinates="e8"></span>
+						<span data-coordinates="e9"></span>
+						<span data-coordinates="e10"></span>
+						<span data-coordinates="f1"></span>
+						<span data-coordinates="f2"></span>
+						<span data-coordinates="f3"></span>
+						<span data-coordinates="f4"></span>
+						<span data-coordinates="f5"></span>
+						<span data-coordinates="f6"></span>
+						<span data-coordinates="f7"></span>
+						<span data-coordinates="f8"></span>
+						<span data-coordinates="f9"></span>
+						<span data-coordinates="f10"></span>
+						<span data-coordinates="g1"></span>
+						<span data-coordinates="g2"></span>
+						<span data-coordinates="g3"></span>
+						<span data-coordinates="g4"></span>
+						<span data-coordinates="g5"></span>
+						<span data-coordinates="g6"></span>
+						<span data-coordinates="g7"></span>
+						<span data-coordinates="g8"></span>
+						<span data-coordinates="g9"></span>
+						<span data-coordinates="g10"></span>
+						<span data-coordinates="h1"></span>
+						<span data-coordinates="h2"></span>
+						<span data-coordinates="h3"></span>
+						<span data-coordinates="h4"></span>
+						<span data-coordinates="h5"></span>
+						<span data-coordinates="h6"></span>
+						<span data-coordinates="h7"></span>
+						<span data-coordinates="h8"></span>
+						<span data-coordinates="h9"></span>
+						<span data-coordinates="h10"></span>
+						<span data-coordinates="i1"></span>
+						<span data-coordinates="i2"></span>
+						<span data-coordinates="i3"></span>
+						<span data-coordinates="i4"></span>
+						<span data-coordinates="i5"></span>
+						<span data-coordinates="i6"></span>
+						<span data-coordinates="i7"></span>
+						<span data-coordinates="i8"></span>
+						<span data-coordinates="i9"></span>
+						<span data-coordinates="i10"></span>
+						<span data-coordinates="j1"></span>
+						<span data-coordinates="j2"></span>
+						<span data-coordinates="j3"></span>
+						<span data-coordinates="j4"></span>
+						<span data-coordinates="j5"></span>
+						<span data-coordinates="j6"></span>
+						<span data-coordinates="j7"></span>
+						<span data-coordinates="j8"></span>
+						<span data-coordinates="j9"></span>
+						<span data-coordinates="j10"></span>
+						<div class="letter">
+							<div>a</div>
+							<div>b</div>
+							<div>c</div>
+							<div>d</div>
+							<div>e</div>
+							<div>f</div>
+							<div>g</div>
+							<div>h</div>
+							<div>i</div>
+							<div>j</div>
+						</div>
+					</div>
+					<div class="field-his">
+						<h3>противника поле</h3>
+						<div class="digits">
+							<div style="display:inline-block;">1</div>
+							<div style="display:inline-block;">2</div>
+							<div style="display:inline-block;">3</div>
+							<div style="display:inline-block;">4</div>
+							<div style="display:inline-block;">5</div>
+							<div style="display:inline-block;">6</div>
+							<div style="display:inline-block;">7</div>
+							<div style="display:inline-block;">8</div>
+							<div style="display:inline-block;">9</div>
+							<div style="display:inline-block;">10</div>
+						</div>
+						<span data-coordinates="a1"></span>
+						<span data-coordinates="a2"></span>
+						<span data-coordinates="a3"></span>
+						<span data-coordinates="a4"></span>
+						<span data-coordinates="a5"></span>
+						<span data-coordinates="a6"></span>
+						<span data-coordinates="a7"></span>
+						<span data-coordinates="a8"></span>
+						<span data-coordinates="a9"></span>
+						<span data-coordinates="a10"></span>
+						<span data-coordinates="b1"></span>
+						<span data-coordinates="b2"></span>
+						<span data-coordinates="b3"></span>
+						<span data-coordinates="b4"></span>
+						<span data-coordinates="b5"></span>
+						<span data-coordinates="b6"></span>
+						<span data-coordinates="b7"></span>
+						<span data-coordinates="b8"></span>
+						<span data-coordinates="b9"></span>
+						<span data-coordinates="b10"></span>
+						<span data-coordinates="c1"></span>
+						<span data-coordinates="c2"></span>
+						<span data-coordinates="c3"></span>
+						<span data-coordinates="c4"></span>
+						<span data-coordinates="c5"></span>
+						<span data-coordinates="c6"></span>
+						<span data-coordinates="c7"></span>
+						<span data-coordinates="c8"></span>
+						<span data-coordinates="c9"></span>
+						<span data-coordinates="c10"></span>
+						<span data-coordinates="d1"></span>
+						<span data-coordinates="d2"></span>
+						<span data-coordinates="d3"></span>
+						<span data-coordinates="d4"></span>
+						<span data-coordinates="d5"></span>
+						<span data-coordinates="d6"></span>
+						<span data-coordinates="d7"></span>
+						<span data-coordinates="d8"></span>
+						<span data-coordinates="d9"></span>
+						<span data-coordinates="d10"></span>
+						<span data-coordinates="e1"></span>
+						<span data-coordinates="e2"></span>
+						<span data-coordinates="e3"></span>
+						<span data-coordinates="e4"></span>
+						<span data-coordinates="e5"></span>
+						<span data-coordinates="e6"></span>
+						<span data-coordinates="e7"></span>
+						<span data-coordinates="e8"></span>
+						<span data-coordinates="e9"></span>
+						<span data-coordinates="e10"></span>
+						<span data-coordinates="f1"></span>
+						<span data-coordinates="f2"></span>
+						<span data-coordinates="f3"></span>
+						<span data-coordinates="f4"></span>
+						<span data-coordinates="f5"></span>
+						<span data-coordinates="f6"></span>
+						<span data-coordinates="f7"></span>
+						<span data-coordinates="f8"></span>
+						<span data-coordinates="f9"></span>
+						<span data-coordinates="f10"></span>
+						<span data-coordinates="g1"></span>
+						<span data-coordinates="g2"></span>
+						<span data-coordinates="g3"></span>
+						<span data-coordinates="g4"></span>
+						<span data-coordinates="g5"></span>
+						<span data-coordinates="g6"></span>
+						<span data-coordinates="g7"></span>
+						<span data-coordinates="g8"></span>
+						<span data-coordinates="g9"></span>
+						<span data-coordinates="g10"></span>
+						<span data-coordinates="h1"></span>
+						<span data-coordinates="h2"></span>
+						<span data-coordinates="h3"></span>
+						<span data-coordinates="h4"></span>
+						<span data-coordinates="h5"></span>
+						<span data-coordinates="h6"></span>
+						<span data-coordinates="h7"></span>
+						<span data-coordinates="h8"></span>
+						<span data-coordinates="h9"></span>
+						<span data-coordinates="h10"></span>
+						<span data-coordinates="i1"></span>
+						<span data-coordinates="i2"></span>
+						<span data-coordinates="i3"></span>
+						<span data-coordinates="i4"></span>
+						<span data-coordinates="i5"></span>
+						<span data-coordinates="i6"></span>
+						<span data-coordinates="i7"></span>
+						<span data-coordinates="i8"></span>
+						<span data-coordinates="i9"></span>
+						<span data-coordinates="i10"></span>
+						<span data-coordinates="j1"></span>
+						<span data-coordinates="j2"></span>
+						<span data-coordinates="j3"></span>
+						<span data-coordinates="j4"></span>
+						<span data-coordinates="j5"></span>
+						<span data-coordinates="j6"></span>
+						<span data-coordinates="j7"></span>
+						<span data-coordinates="j8"></span>
+						<span data-coordinates="j9"></span>
+						<span data-coordinates="j10"></span>
+						<div class="letter">
+							<div>a</div>
+							<div>b</div>
+							<div>c</div>
+							<div>d</div>
+							<div>e</div>
+							<div>f</div>
+							<div>g</div>
+							<div>h</div>
+							<div>i</div>
+							<div>j</div>
+						</div>
+					</div>
+					<button class="endRun1"  style="display: none;">Kонец хода</button>
+				</div>
+			</div>
+			<div id="player2" style="display: none;">
+				<div class="player2">
+					<h3>расстановка флота второго игрока</h3>
+					<label for="y4"><span></span><span></span><span></span><span></span></label>
+					<input type="text" name="y4" id="y4">
+					<label for="y3-1"><span></span><span></span><span></span></label>
+					<input type="text" name="y3-1" id="y3-1">
+					<label for="y3-2"><span></span><span></span><span></span></label>
+					<input type="text" name="y3-2" id="y3-2">
+					<label for="y2-1"><span></span><span></span></label>
+					<input type="text" name="y2-1" id="y2-1">
+					<label for="y2-2"><span></span><span></span></label>
+					<input type="text" name="y2-2" id="y2-2">
+					<label for="y2-3"><span></span><span></span></label>
+					<input type="text" name="y2-3" id="y2-3">
+					<label for="y1-1"><span></span></label>
+					<input type="text" name="y1-1" id="y1-1">
+					<label for="y1-2"><span></span></label>
+					<input type="text" name="y1-2" id="y1-2">
+					<label for="y1-3"><span></span></label>
+					<input type="text" name="y1-3" id="y1-3">
+					<label for="y1-4"><span></span></label>
+					<input type="text" name="y1-4" id="y1-4">
+				</div>
+				<button id="next2">Начнем</button>
+				<button class="reset2">Oчистить</button>
+				<div class="pole2">
+					<h1>Ходит второй игрок</h1>
+					<div class="field-my">
+						<h3>ваше поле</h3>
+						<div class="digits">
+							<div style="display:inline-block;">1</div>
+							<div style="display:inline-block;">2</div>
+							<div style="display:inline-block;">3</div>
+							<div style="display:inline-block;">4</div>
+							<div style="display:inline-block;">5</div>
+							<div style="display:inline-block;">6</div>
+							<div style="display:inline-block;">7</div>
+							<div style="display:inline-block;">8</div>
+							<div style="display:inline-block;">9</div>
+							<div style="display:inline-block;">10</div>
+						</div>
+						<span data-coordinates="a1"></span>
+						<span data-coordinates="a2"></span>
+						<span data-coordinates="a3"></span>
+						<span data-coordinates="a4"></span>
+						<span data-coordinates="a5"></span>
+						<span data-coordinates="a6"></span>
+						<span data-coordinates="a7"></span>
+						<span data-coordinates="a8"></span>
+						<span data-coordinates="a9"></span>
+						<span data-coordinates="a10"></span>
+						<span data-coordinates="b1"></span>
+						<span data-coordinates="b2"></span>
+						<span data-coordinates="b3"></span>
+						<span data-coordinates="b4"></span>
+						<span data-coordinates="b5"></span>
+						<span data-coordinates="b6"></span>
+						<span data-coordinates="b7"></span>
+						<span data-coordinates="b8"></span>
+						<span data-coordinates="b9"></span>
+						<span data-coordinates="b10"></span>
+						<span data-coordinates="c1"></span>
+						<span data-coordinates="c2"></span>
+						<span data-coordinates="c3"></span>
+						<span data-coordinates="c4"></span>
+						<span data-coordinates="c5"></span>
+						<span data-coordinates="c6"></span>
+						<span data-coordinates="c7"></span>
+						<span data-coordinates="c8"></span>
+						<span data-coordinates="c9"></span>
+						<span data-coordinates="c10"></span>
+						<span data-coordinates="d1"></span>
+						<span data-coordinates="d2"></span>
+						<span data-coordinates="d3"></span>
+						<span data-coordinates="d4"></span>
+						<span data-coordinates="d5"></span>
+						<span data-coordinates="d6"></span>
+						<span data-coordinates="d7"></span>
+						<span data-coordinates="d8"></span>
+						<span data-coordinates="d9"></span>
+						<span data-coordinates="d10"></span>
+						<span data-coordinates="e1"></span>
+						<span data-coordinates="e2"></span>
+						<span data-coordinates="e3"></span>
+						<span data-coordinates="e4"></span>
+						<span data-coordinates="e5"></span>
+						<span data-coordinates="e6"></span>
+						<span data-coordinates="e7"></span>
+						<span data-coordinates="e8"></span>
+						<span data-coordinates="e9"></span>
+						<span data-coordinates="e10"></span>
+						<span data-coordinates="f1"></span>
+						<span data-coordinates="f2"></span>
+						<span data-coordinates="f3"></span>
+						<span data-coordinates="f4"></span>
+						<span data-coordinates="f5"></span>
+						<span data-coordinates="f6"></span>
+						<span data-coordinates="f7"></span>
+						<span data-coordinates="f8"></span>
+						<span data-coordinates="f9"></span>
+						<span data-coordinates="f10"></span>
+						<span data-coordinates="g1"></span>
+						<span data-coordinates="g2"></span>
+						<span data-coordinates="g3"></span>
+						<span data-coordinates="g4"></span>
+						<span data-coordinates="g5"></span>
+						<span data-coordinates="g6"></span>
+						<span data-coordinates="g7"></span>
+						<span data-coordinates="g8"></span>
+						<span data-coordinates="g9"></span>
+						<span data-coordinates="g10"></span>
+						<span data-coordinates="h1"></span>
+						<span data-coordinates="h2"></span>
+						<span data-coordinates="h3"></span>
+						<span data-coordinates="h4"></span>
+						<span data-coordinates="h5"></span>
+						<span data-coordinates="h6"></span>
+						<span data-coordinates="h7"></span>
+						<span data-coordinates="h8"></span>
+						<span data-coordinates="h9"></span>
+						<span data-coordinates="h10"></span>
+						<span data-coordinates="i1"></span>
+						<span data-coordinates="i2"></span>
+						<span data-coordinates="i3"></span>
+						<span data-coordinates="i4"></span>
+						<span data-coordinates="i5"></span>
+						<span data-coordinates="i6"></span>
+						<span data-coordinates="i7"></span>
+						<span data-coordinates="i8"></span>
+						<span data-coordinates="i9"></span>
+						<span data-coordinates="i10"></span>
+						<span data-coordinates="j1"></span>
+						<span data-coordinates="j2"></span>
+						<span data-coordinates="j3"></span>
+						<span data-coordinates="j4"></span>
+						<span data-coordinates="j5"></span>
+						<span data-coordinates="j6"></span>
+						<span data-coordinates="j7"></span>
+						<span data-coordinates="j8"></span>
+						<span data-coordinates="j9"></span>
+						<span data-coordinates="j10"></span>
+						<div class="letter">
+							<div>a</div>
+							<div>b</div>
+							<div>c</div>
+							<div>d</div>
+							<div>e</div>
+							<div>f</div>
+							<div>g</div>
+							<div>h</div>
+							<div>i</div>
+							<div>j</div>
+						</div>
+					</div>
+					<div class="field-his">
+						<h3>противника поле</h3>
+						<div class="digits">
+							<div style="display:inline-block;">1</div>
+							<div style="display:inline-block;">2</div>
+							<div style="display:inline-block;">3</div>
+							<div style="display:inline-block;">4</div>
+							<div style="display:inline-block;">5</div>
+							<div style="display:inline-block;">6</div>
+							<div style="display:inline-block;">7</div>
+							<div style="display:inline-block;">8</div>
+							<div style="display:inline-block;">9</div>
+							<div style="display:inline-block;">10</div>
+						</div>
+						<span data-coordinates="a1"></span>
+						<span data-coordinates="a2"></span>
+						<span data-coordinates="a3"></span>
+						<span data-coordinates="a4"></span>
+						<span data-coordinates="a5"></span>
+						<span data-coordinates="a6"></span>
+						<span data-coordinates="a7"></span>
+						<span data-coordinates="a8"></span>
+						<span data-coordinates="a9"></span>
+						<span data-coordinates="a10"></span>
+						<span data-coordinates="b1"></span>
+						<span data-coordinates="b2"></span>
+						<span data-coordinates="b3"></span>
+						<span data-coordinates="b4"></span>
+						<span data-coordinates="b5"></span>
+						<span data-coordinates="b6"></span>
+						<span data-coordinates="b7"></span>
+						<span data-coordinates="b8"></span>
+						<span data-coordinates="b9"></span>
+						<span data-coordinates="b10"></span>
+						<span data-coordinates="c1"></span>
+						<span data-coordinates="c2"></span>
+						<span data-coordinates="c3"></span>
+						<span data-coordinates="c4"></span>
+						<span data-coordinates="c5"></span>
+						<span data-coordinates="c6"></span>
+						<span data-coordinates="c7"></span>
+						<span data-coordinates="c8"></span>
+						<span data-coordinates="c9"></span>
+						<span data-coordinates="c10"></span>
+						<span data-coordinates="d1"></span>
+						<span data-coordinates="d2"></span>
+						<span data-coordinates="d3"></span>
+						<span data-coordinates="d4"></span>
+						<span data-coordinates="d5"></span>
+						<span data-coordinates="d6"></span>
+						<span data-coordinates="d7"></span>
+						<span data-coordinates="d8"></span>
+						<span data-coordinates="d9"></span>
+						<span data-coordinates="d10"></span>
+						<span data-coordinates="e1"></span>
+						<span data-coordinates="e2"></span>
+						<span data-coordinates="e3"></span>
+						<span data-coordinates="e4"></span>
+						<span data-coordinates="e5"></span>
+						<span data-coordinates="e6"></span>
+						<span data-coordinates="e7"></span>
+						<span data-coordinates="e8"></span>
+						<span data-coordinates="e9"></span>
+						<span data-coordinates="e10"></span>
+						<span data-coordinates="f1"></span>
+						<span data-coordinates="f2"></span>
+						<span data-coordinates="f3"></span>
+						<span data-coordinates="f4"></span>
+						<span data-coordinates="f5"></span>
+						<span data-coordinates="f6"></span>
+						<span data-coordinates="f7"></span>
+						<span data-coordinates="f8"></span>
+						<span data-coordinates="f9"></span>
+						<span data-coordinates="f10"></span>
+						<span data-coordinates="g1"></span>
+						<span data-coordinates="g2"></span>
+						<span data-coordinates="g3"></span>
+						<span data-coordinates="g4"></span>
+						<span data-coordinates="g5"></span>
+						<span data-coordinates="g6"></span>
+						<span data-coordinates="g7"></span>
+						<span data-coordinates="g8"></span>
+						<span data-coordinates="g9"></span>
+						<span data-coordinates="g10"></span>
+						<span data-coordinates="h1"></span>
+						<span data-coordinates="h2"></span>
+						<span data-coordinates="h3"></span>
+						<span data-coordinates="h4"></span>
+						<span data-coordinates="h5"></span>
+						<span data-coordinates="h6"></span>
+						<span data-coordinates="h7"></span>
+						<span data-coordinates="h8"></span>
+						<span data-coordinates="h9"></span>
+						<span data-coordinates="h10"></span>
+						<span data-coordinates="i1"></span>
+						<span data-coordinates="i2"></span>
+						<span data-coordinates="i3"></span>
+						<span data-coordinates="i4"></span>
+						<span data-coordinates="i5"></span>
+						<span data-coordinates="i6"></span>
+						<span data-coordinates="i7"></span>
+						<span data-coordinates="i8"></span>
+						<span data-coordinates="i9"></span>
+						<span data-coordinates="i10"></span>
+						<span data-coordinates="j1"></span>
+						<span data-coordinates="j2"></span>
+						<span data-coordinates="j3"></span>
+						<span data-coordinates="j4"></span>
+						<span data-coordinates="j5"></span>
+						<span data-coordinates="j6"></span>
+						<span data-coordinates="j7"></span>
+						<span data-coordinates="j8"></span>
+						<span data-coordinates="j9"></span>
+						<span data-coordinates="j10"></span>
+						<div class="letter">
+							<div>a</div>
+							<div>b</div>
+							<div>c</div>
+							<div>d</div>
+							<div>e</div>
+							<div>f</div>
+							<div>g</div>
+							<div>h</div>
+							<div>i</div>
+							<div>j</div>
+						</div>
+					</div>
+					<button class="endRun2" style="display: none;">Kонец хода</button>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<h1>Правила игры</h1>
+			<h3>Перед началом игры прочтите правила</h3>
+			<p>В связи с тем что некоторая логика еще не доделана нужно <strong style="color: red;">соблюдать</strong> такие правила:</p>
+			<ul>
+				<li>Создавать кораблики только по прямой лини;</li>
+				<li>Создавать кораблики размером соответствующим рисунку слева;</li>
+				<li>Создавать кораблики не ближе чем на одну клетку по периметру уже созданных;</li>
+				<li>Перед вводом координат кораблей сначала определитесь где они будут размещаться, в связи с тем что при смене координат старые будут оставаться на поле.</li>
+			</ul>
+			<p>Как играть:</p>
+			<ul>
+				<li>жмем кнопку "поехали";</li>
+				<li>появляется поля для ввода текста и ниже поле где расставляются ваши кораблики</li>
+				<li>Кораблики создаются вводом текста(координат) в поле через запятую латинскими буквами . Пример трехпалубника "f3,g3,h3"по вертикали или "f3,f4,f5"по горизонтали. После того как вы выберете новое поле, он появиться на поле "синим цветом";</li>
+				<li>Сначала создает свой флот первый игрок потом второй;</li>
+				<li>жмем кнопку "Начнем";</li>
+				<li>Игроки ходят по очереди. Ход заключается в том что-бы найти корабли противника. Жмете на поле противника по свободным ячейкам. Если после нажатия вывело "о" то вы не попали и можете жать конец хода. Если вывело "х" то вы попали и делаете еще ход.</li>
+			</ul>
+			<p>Надеюсь игра вам понравиться:)</p>
+			<p>P.S. не судите строго.</p>
+			<button id="play">Поехали</button>
+		</div>
+		<div id="win1" style="display: none;">
+			<h1>Победил первый игрок</h1>
+		</div>
+	</div>
+	<div id="win2" style="display: none;">
+		<h1>Победил второй игрок</h1>
+	</div>
+</body>
+</html>

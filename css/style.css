@@ -1,0 +1,107 @@
+body{
+	background: rgba(0,0,0,.2);
+	padding: 0;
+	margin: 0;
+}
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+h3{
+	margin: 10px auto;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+#player1, #player2{
+	margin: 0 auto;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.field-my, .field-his{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 40px;
+	border: 1px solid #232323;
+	position: relative;
+	display: inline-block;
+	margin: 0 120px;
+}
+.field-my:after, .field-his:after, label:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.field-my span, .field-his span, label>span{
+	display: block;
+	float: left;
+	height: 25px;
+	width: 25px;
+	box-sizing: border-box;
+	border: 1px solid #232323;
+	font-size: 18px;
+	text-align: center;
+}
+.letter{
+	position: absolute;
+	top: 0;
+	left: -18px;
+	font-size: 20px;
+}
+.letter>div{
+	margin-top: 1.5px;
+}
+.digits{
+	position: absolute;
+	top: -23px;
+	left: 0;
+	font-size: 20px;
+}
+.digits>div{
+	margin-left: 9px;
+}
+label{
+	display: inline-block;
+	margin-right: 5px;
+	width: 25%;
+	cursor: pointer;
+	position: relative;
+}
+label:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+label+input{
+	width: 60%;
+	vertical-align: top;
+}
+.on{
+	background: blue;
+}
+.field-my h3,.field-his h3{
+	position: absolute;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	top: -45px;
+	left: 0;
+	right: 0;
+}
+#win1,#win2{
+	position: fixed;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 100px;
+	font-size: 40px;
+}
