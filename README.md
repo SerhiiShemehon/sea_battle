@@ -4,6 +4,7 @@
 **Версия:** 0.1.0;
 ---
 **e-mail:** https://github.com/SerhiiShemehon;
+**Можно попробовать сыграть здесь:** https://serhiishemehon.github.io/sea_battle/
 ---
 Решил попробовать сделать небольшую игрушку. Мой выбор пал на морской бой. 
 ---
