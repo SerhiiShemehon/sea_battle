@@ -14,25 +14,25 @@
 				<div class="player1">
 					<h3>расстановка флота первого игрока</h3>
 					<label for="x4"><span></span><span></span><span></span><span></span></label>
-					<input type="text" name="x4" id="x4">
+					<input value="d2,c2,e2,f2" type="text" name="x4" id="x4">
 					<label for="x3-1"><span></span><span></span><span></span></label>
-					<input type="text" name="x3-1" id="x3-1">
+					<input value="b5,b6,b7" type="text" name="x3-1" id="x3-1">
 					<label for="x3-2"><span></span><span></span><span></span></label>
-					<input type="text" name="x3-2" id="x3-2">
+					<input value="j7,i7,h7" type="text" name="x3-2" id="x3-2">
 					<label for="x2-1"><span></span><span></span></label>
-					<input type="text" name="x2-1" id="x2-1">
+					<input value="e9,e10" type="text" name="x2-1" id="x2-1">
 					<label for="x2-2"><span></span><span></span></label>
-					<input type="text" name="x2-2" id="x2-2">
+					<input value="i1,i2" type="text" name="x2-2" id="x2-2">
 					<label for="x2-3"><span></span><span></span></label>
-					<input type="text" name="x2-3" id="x2-3">
+					<input value="h4,g4" type="text" name="x2-3" id="x2-3">
 					<label for="x1-1"><span></span></label>
-					<input type="text" name="x1-1" id="x1-1">
+					<input value="a2" type="text" name="x1-1" id="x1-1">
 					<label for="x1-2"><span></span></label>
-					<input type="text" name="x1-2" id="x1-2">
+					<input value="i10" type="text" name="x1-2" id="x1-2">
 					<label for="x1-3"><span></span></label>
-					<input type="text" name="x1-3" id="x1-3">
+					<input value="e6" type="text" name="x1-3" id="x1-3">
 					<label for="x1-4"><span></span></label>
-					<input type="text" name="x1-4" id="x1-4">
+					<input value="a10" type="text" name="x1-4" id="x1-4">
 				</div>
 				<button id="next1">Следующий</button>
 				<button class="reset1">Oчистить</button>
@@ -299,25 +299,25 @@
 				<div class="player2">
 					<h3>расстановка флота второго игрока</h3>
 					<label for="y4"><span></span><span></span><span></span><span></span></label>
-					<input type="text" name="y4" id="y4">
+					<input value="g10,g9,g8,g7" type="text" name="y4" id="y4">
 					<label for="y3-1"><span></span><span></span><span></span></label>
-					<input type="text" name="y3-1" id="y3-1">
+					<input value="g1,h1,i1" type="text" name="y3-1" id="y3-1">
 					<label for="y3-2"><span></span><span></span><span></span></label>
-					<input type="text" name="y3-2" id="y3-2">
+					<input value="a4,b4,c4" type="text" name="y3-2" id="y3-2">
 					<label for="y2-1"><span></span><span></span></label>
-					<input type="text" name="y2-1" id="y2-1">
+					<input value="a6,a7" type="text" name="y2-1" id="y2-1">
 					<label for="y2-2"><span></span><span></span></label>
-					<input type="text" name="y2-2" id="y2-2">
+					<input value="i5,j5" type="text" name="y2-2" id="y2-2">
 					<label for="y2-3"><span></span><span></span></label>
-					<input type="text" name="y2-3" id="y2-3">
+					<input value="c9,d9" type="text" name="y2-3" id="y2-3">
 					<label for="y1-1"><span></span></label>
-					<input type="text" name="y1-1" id="y1-1">
+					<input value="c1" type="text" name="y1-1" id="y1-1">
 					<label for="y1-2"><span></span></label>
-					<input type="text" name="y1-2" id="y1-2">
+					<input value="j9" type="text" name="y1-2" id="y1-2">
 					<label for="y1-3"><span></span></label>
-					<input type="text" name="y1-3" id="y1-3">
+					<input value="a2" type="text" name="y1-3" id="y1-3">
 					<label for="y1-4"><span></span></label>
-					<input type="text" name="y1-4" id="y1-4">
+					<input value="j3" type="text" name="y1-4" id="y1-4">
 				</div>
 				<button id="next2">Начнем</button>
 				<button class="reset2">Oчистить</button>
@@ -597,6 +597,7 @@
 				<li>появляется поля для ввода текста и ниже поле где расставляются ваши кораблики</li>
 				<li>Кораблики создаются вводом текста(координат) в поле через запятую латинскими буквами . Пример трехпалубника "f3,g3,h3"по вертикали или "f3,f4,f5"по горизонтали. После того как вы выберете новое поле, он появиться на поле "синим цветом";</li>
 				<li>Сначала создает свой флот первый игрок потом второй;</li>
+				<li>Сначала вам предоставлено стандартная расстановка. Если она вас устраивает, просто выберите поле и переключите на следующие.</li>
 				<li>жмем кнопку "Начнем";</li>
 				<li>Игроки ходят по очереди. Ход заключается в том что-бы найти корабли противника. Жмете на поле противника по свободным ячейкам. Если после нажатия вывело "о" то вы не попали и можете жать конец хода. Если вывело "х" то вы попали и делаете еще ход.</li>
 			</ul>
